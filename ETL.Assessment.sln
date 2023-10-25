@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.Assessment.ConsoleApp", "src\ETL.Assessment.ConsoleApp\ETL.Assessment.ConsoleApp.csproj", "{C5AA53B6-BBCF-47F4-AFF9-C09FB61AB24D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ETL.Assessment.Application", "src\ETL.Assessment.Application\ETL.Assessment.Application.csproj", "{C091E228-3262-4C8D-805D-C0CE5483FB8B}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ETL.Assessment.Database", "src\ETL.Assessment.Database\ETL.Assessment.Database.sqlproj", "{E816094F-DB16-4994-AC81-E52ECFB82DEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5AA53B6-BBCF-47F4-AFF9-C09FB61AB24D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5AA53B6-BBCF-47F4-AFF9-C09FB61AB24D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5AA53B6-BBCF-47F4-AFF9-C09FB61AB24D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5AA53B6-BBCF-47F4-AFF9-C09FB61AB24D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C091E228-3262-4C8D-805D-C0CE5483FB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C091E228-3262-4C8D-805D-C0CE5483FB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C091E228-3262-4C8D-805D-C0CE5483FB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C091E228-3262-4C8D-805D-C0CE5483FB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E816094F-DB16-4994-AC81-E52ECFB82DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E816094F-DB16-4994-AC81-E52ECFB82DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E816094F-DB16-4994-AC81-E52ECFB82DEE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E816094F-DB16-4994-AC81-E52ECFB82DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E816094F-DB16-4994-AC81-E52ECFB82DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E816094F-DB16-4994-AC81-E52ECFB82DEE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C3B5901-5D43-4459-8ADF-0F13A023BD4F}
+	EndGlobalSection
+EndGlobal

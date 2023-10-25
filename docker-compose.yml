@@ -1,0 +1,27 @@
+version: '3.8'
+name: etl
+
+services:
+  mssql:
+    image: mcr.microsoft.com/mssql/server:latest
+    platform: linux/amd64
+    environment:
+      - MSSQL_SA_PASSWORD=Ch@ngemeS00N
+      - ACCEPT_EULA=Y
+    ports:
+      - 1433:1433
+    volumes:
+      - ./volumes/ms-sql:/data/db
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P "$$MSSQL_SA_PASSWORD" -Q
+        "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  start_dependencies:
+    image: ducktors/docker-wait-for-dependencies
+    depends_on:
+      - mssql
+    command: mssql:1433
